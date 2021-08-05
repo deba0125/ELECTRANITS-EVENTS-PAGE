@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>POWERSURGE</title>
+
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+
+
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: "Montserrat", cursive;
+
+        }
+
+        .navbar {
+            display: flex;
+            width: 100%;
+            margin: auto;
+
+
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+
+            position: sticky;
+
+        }
+
+
+        .logo {
+            margin-left: 20px;
+        }
+
+        .name {
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: white;
+            text-shadow: 1px 1px 5px black;
+            text-align: center;
+        }
+
+        .links a {
+            list-style: none;
+            text-decoration: none;
+            color: white;
+            padding: 30px;
+        }
+
+        .links a:hover {
+            list-style: none;
+            text-decoration: none;
+            color: white;
+            padding: 30px;
+            text-decoration: underline;
+        }
+
+
+
+        .power {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            margin-bottom: 40px;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+
+        .para {
+            display: flex;
+            text-align: center;
+            /* justify-content: center; */
+            /* margin-top: 0px; */
+            margin-bottom: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+
+            font-size: 1rem;
+        }
+
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin-top: 20px;
+            margin-bottom: 20px;
+            /* border: 1px solid black; */
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 2px 2px 8px grey;
+
+        }
+
+        .card li {
+            list-style: none;
+            font-size: 1rem;
+        }
+
+        .card-title {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* #btn {
+            background-color: red;
+            border: 1px solid red;
+        }
+
+        #btn:hover {
+            background-color: maroon;
+            border: 1px solid maroon;
+        }
+
+        #btn2 {
+            background-color: rgb(14, 14, 37);
+            border: 1px solid rgb(14, 14, 37);
+        }
+
+        #btn2:hover {
+            background-color: blue;
+            border: 1px solid blue;
+        } */
+
+
+        .arrow{position: fixed;
+            bottom: 40px;
+            right: 20px;
+           
+
+       }
+
+        .footer-dark {
+            padding: 50px 0;
+            color: #f0f9ff;
+            background-color: black;
+        }
+
+        .footer-dark h3 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .footer-dark ul {
+            padding: 0;
+            list-style: none;
+            line-height: 1.6;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        .footer-dark ul a {
+            color: inherit;
+            text-decoration: none;
+            opacity: 0.6;
+        }
+
+        .footer-dark ul a:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width:767px) {
+            .footer-dark .item:not(.social) {
+                text-align: center;
+                padding-bottom: 20px;
+            }
+        }
+
+        .footer-dark .item.text {
+            margin-bottom: 36px;
+        }
+
+        @media (max-width:767px) {
+            .footer-dark .item.text {
+                margin-bottom: 0;
+            }
+        }
+
+        .footer-dark .item.text p {
+            opacity: 0.6;
+            margin-bottom: 0;
+        }
+
+        .footer-dark .item.social {
+            text-align: center;
+        }
+
+        @media (max-width:991px) {
+            .footer-dark .item.social {
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+
+        .footer-dark .item.social>a {
+            font-size: 20px;
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+            margin: 0 8px;
+            color: #fff;
+            opacity: 0.75;
+        }
+
+        .footer-dark .item.social>a:hover {
+            opacity: 0.9;
+        }
+
+        .footer-dark .copyright {
+            text-align: center;
+            padding-top: 24px;
+            opacity: 0.3;
+            font-size: 13px;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container-fluid">
+            <div class="logo"> <img src="img/electra logo.png" alt="logo" width="100px" height="100px"></div>
+            <div class="name">EVENTS</div>
+            <div class="links">
+                <a href="http://www.electranits.com/Explore_NITS">Home</a>
+
+            </div>
+
+
+        </div>
+
+    </nav>
+
+
+    <!-- Upcoming events -->
+
+    <div class="power">POWERSURGE 6.0</div>
+    <div class="para">"Electra Society brings to you 𝘗𝘖𝘞𝘌𝘙𝘚𝘜𝘙𝘎𝘌 6.0 – a profusion of some spectacularly
+        breathtaking events to make you feel all alive again, to rejuvenate your brain cells and to break the boredom
+        throughout. This, you can enjoy all from the safety and comfort of your homes."</div>
+
+
+
+
+
+    <!-- results -->
+    <div class="power">RESULTS</div>
+
+
+    <div class="card " style="width: 18rem;">
+        <img src="img/POWESURGE/android.jpg" class="card-img-top" alt="..." style="height: 20rem;">
+        <div class="card-body">
+            <h5 class="card-title">ANDROID ELECTRATHON</h5>
+            <ul>
+                <li>1st- Nikita Khapate</li>
+                <li>2nd- Biju Borah</li>
+
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="card " style="width: 18rem;">
+        <img src="img/POWESURGE/betterthan.jpg" class="card-img-top" alt="..." style="height: 20rem;">
+        <div class="card-body">
+            <h5 class="card-title">BETTER THAN AUTOCORRECT</h5>
+            <ul>
+                <li>1st- Diksheet Agarwal (1912059)</li>
+                <li>2nd- Anusha Hazarika (1914128)</li>
+                <li>3rd- Aditya Soni (1912101)</li>
+
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div class="card " style="width: 18rem;">
+        <img src="img/POWESURGE/bigbulls.jpg" class="card-img-top" alt="..." style="height: 20rem;">
+        <div class="card-body">
+            <h5 class="card-title">BIG BULLS</h5>
+            <ul>
+                <li>1st- Rituraj Kr Pathak</li>
+                <li>2nd- Tejas Sangale</li>
+                <li>2nd- Piyush Yadav</li>
+
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div class="card " style="width: 18rem;">
+        <img src="img/POWESURGE/codm.jpg" class="card-img-top" alt="..." style="height: 20rem;">
+        <div class="card-body">
+            <h5 class="card-title">COD MOBILE</h5>
+            <ul>
+                <li><span style="font-weight: 900;"> 1st-Team SOUL PURPOSE</span>
+                    (Sunit Pathak,Rupankar Das,Seeni Lakshmi, Partha Pratim Patgiri,Akashdeep Singh,Gopireddy Nandeeshwar Reddy)
+                </li>
+                <li><span style="font-weight: 900;">2nd- Team PHOENIX</span>
+                    (Jyotiska Das, Abhilash Paul,Ayang Yangi,Laharjit Das)
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div class="card " style="width: 18rem;">
+        <img src="img/POWESURGE/crackthecode.jpg" class="card-img-top" alt="..." style="height: 20rem;">
+        <div class="card-body">
+            <h5 class="card-title">CRACK THE CODE</h5>
+            <ul>
+                <li>1st- Manish Kumar Poddar</li>
+                <li>2nd- Hardik Jain</li>
+
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div class="card " style="width: 18rem;">
+        <img src="img/POWESURGE/decryptofy.jpg" class="card-img-top" alt="..." style="height: 20rem;">
+        <div class="card-body">
+            <h5 class="card-title">DECRYPTO-FY</h5>
+            <ul>
+                <li>1st- <span style="font-weight: 900;">Team DAV</span>(Kolli Vardhan,Kurumoju Deepak ) </li>
+                <li>2nd-<span style="font-weight: 900;">Team Static</span>(Aditya Bhura,Rohit Raj ) </li>
+                <li>3rd-<span style="font-weight: 900;">Team Notalone</span>(Kushagra Kumar,Dipesh Kumar Sinha ) </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div class="card " style="width: 18rem;">
+        <img src="img/POWESURGE/electrahacks.jpg" class="card-img-top" alt="..." style="height: 20rem;">
+        <div class="card-body">
+            <h5 class="card-title">ELECTRA HACKS</h5>
+            <ul>
+                <li>1st- Aditya Verma</li>
+                <li>2nd- Ayush Sharma</li>
+
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div class="card " style="width: 18rem;">
+        <img src="img/POWESURGE/maths.jpg" class="card-img-top" alt="..." style="height: 20rem;">
+        <div class="card-body">
+            <h5 class="card-title">MATHELATICS</h5>
+            <ul>
+                <li>1st- Dibyajyoti bora</li>
+                <li>2nd- Amogh Nagunoori </li>
+                <li>3rd- Aditya Agarwal </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div class="card " style="width: 18rem;">
+        <img src="img/POWESURGE/obscura.jpg" class="card-img-top" alt="..." style="height: 20rem;">
+        <div class="card-body">
+            <h5 class="card-title">OBSCURA</h5>
+            <ul>
+                <li>1st- Shibam Debnath</li>
+                <li>2nd- Emon Kalita</li>
+                <li>3rd- Manav Sanghi</li>
+
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div class="card " style="width: 18rem;">
+        <img src="img/POWESURGE/palletes.jpg" class="card-img-top" alt="..." style="height: 20rem;">
+        <div class="card-body">
+            <h5 class="card-title">PALETTES & PATTERNS</h5>
+            <ul>
+                <li>1st- Reetom Rana Dutta</li>
+                <li>2nd- Geetanjali Deka</li>
+                <li>3rd- Meghna Boro</li>
+
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div class="card " style="width: 18rem;">
+        <img src="img/POWESURGE/typing.jpg" class="card-img-top" alt="..." style="height: 20rem;">
+        <div class="card-body">
+            <h5 class="card-title">TYPING RACE</h5>
+            <ul>
+                <li>1st- Nihar Basisth</li>
+                <li>2nd- Aditya Agarwal</li>
+                <li>2nd- Sampriti Patel </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="card " style="width: 18rem;">
+        <img src="img/POWESURGE/voice.jpg" class="card-img-top" alt="..." style="height: 20rem;">
+        <div class="card-body">
+            <h5 class="card-title">VOICE OF ELECTRA</h5>
+            <ul>
+                <li>Tanmay Tripathy</li>
+                <li>Adrita Buragohain</li>
+
+            </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- arrow top -->
+<a href="#" class="arrow " ><img src="img/up.png" alt="#" height="40rem"
+    width="40rem"></a>
+
+
+
+    <!-- footer -->
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="http://www.electranits.com/Explore_NITS/basics.html#fee">Fee Payment</a></li>
+                            <li><a href=" http://www.electranits.com/Explore_NITS/basics.html#coun">Counselling doc.</a>
+                            </li>
+                            <li><a href=" http://www.electranits.com/Explore_NITS/basics.html#nearhostel">NEARBY
+                                    HOTELS</a></li>
+                            <li><a href=" http://www.electranits.com/Explore_NITS/campust.html#bus">Bus timings</a></li>
+                            <li><a href=" http://www.electranits.com/Explore_NITS/faq.html">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Top Links</h3>
+                        <ul>
+                            <li><a href="http://www.electranits.com/Explore_NITS/about.html ">About</a></li>
+                            <li><a href="http://www.electranits.com/Explore_NITS/curriculum.html ">Curriculum</a></li>
+                            <li><a
+                                    href=" http://www.electranits.com/Explore_NITS/Extracurricular.html">Extracurricular</a>
+                            </li>
+                            <li><a href="http://www.electranits.com/Explore_NITS/contact.html ">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>NIT Road,Fakiratilla,Silchar,Assam</h3>
+                        <p>contact@lectranits.com</p>
+                    </div>
+
+                </div>
+                <p class="copyright">Copyright© 2021. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
