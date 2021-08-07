@@ -51,10 +51,7 @@
         }
 
 
-        .logo {
-            margin-left: 20px;
-        }
-
+       
         .name {
             font-weight: 800;
             font-size: 1.5rem;
@@ -67,7 +64,7 @@
             list-style: none;
             text-decoration: none;
             color: white;
-            padding: 30px;
+            padding: 25px;
         }
 
         .links a:hover {
@@ -87,6 +84,11 @@
             margin-bottom: 40px;
             font-weight: bold;
             font-size: 2rem;
+        }
+        .wrapper{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+            grid-gap: 20px;
         }
 
         .card {
@@ -290,30 +292,36 @@
         <!-- Past events -->
     
         <div class="past">Past Events</div>
-    
-        <div class="card " style="width: 18rem;" id="power">
-            <img src="img/POWESURGE/cover.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">POWERSURGE</h5>
-                <p class="card-text">Electra Week conducted under the banner of Electra Society by the second year students
-                    of Electrical Department in April 2021.</p>
-                <a href="powersurge.html" class="btn btn-primary" id="btn2">All Details</a>
+
+        <div class="wrapper">
+
+            <div class="card " style="width: 18rem;" id="power">
+                <img src="img/POWESURGE/cover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">POWERSURGE</h5>
+                    <p class="card-text">Electra Week conducted under the banner of Electra Society by the second year students
+                        of Electrical Department in April 2021.</p>
+                    <a href="powersurge.html" class="btn btn-primary" id="btn2">All Details</a>
+                </div>
             </div>
+        
+        
+            <div class="card " style="width: 18rem;" id="udvega">
+                <img src="img/UDVEGA/udvega cover.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">UDVEGA</h5>
+                    <p class="card-text">Freshers Week conducted under the banner of Electra Society by the then second year
+                        students
+                        of Electrical Department in December 2020.</p>
+                    <a href="udvega.html" class="btn btn-primary" id="btn2">All Details</a>
+                </div>
+            </div>
+    
+    
+
         </div>
     
-    
-        <div class="card " style="width: 18rem;" id="udvega">
-            <img src="img/UDVEGA/udvega cover.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">UDVEGA</h5>
-                <p class="card-text">Freshers Week conducted under the banner of Electra Society by the then second year
-                    students
-                    of Electrical Department in December 2020.</p>
-                <a href="udvega.html" class="btn btn-primary" id="btn2">All Details</a>
-            </div>
-        </div>
-
-
+      
 
 
 
